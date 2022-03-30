@@ -45,6 +45,18 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src='js/script.js' defer></script> 
+	<!--[if (lt ie 10)]>
+        <script>
+            function noIE(msg){
+                if(navigator.userAgent.indexOf('Trident') > 0){
+                    location.href = "microsoft-edge:" + location.href;
+                    alert(msg)
+                    setTimeout(close);
+                }
+            }
+            noIE('IE 9버전 이하는 Microsoft Edge에서 작동됩니다. 새 창을 확인해주세요.');
+        </script>
+    <![endif]-->
 </head>
 <body>
     <div id="wrap">
@@ -60,8 +72,9 @@
 					<h1><span>골프 미녀, 골프 미남들의</span><br>프리미엄 골프 커뮤니티</h1>
 				</div>
 				<div class="header-main-movie">
-					<video class="video1" src="./video/movie5-webm.webm" autoplay loop muted playsinline></video>
-					<!-- <video class="video2" src="./video/movie5-webm.webm" autoplay loop muted width="1000" height="800"></video> -->
+					<video class="video1" src="./video/movie5-webm.webm" autoplay loop muted playsinline>영상을 재생할 수 없습니다.</video>
+					<iframe class="elementor-background-video-embed" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/06Xp7tLk0oU?controls=0&amp;rel=0&amp;playsinline=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.golmegolme.com&amp;widgetid=1?autoplay=1&loop=1&autopause=0?muted=1" id="widget2" data-gtm-yt-inspected-1_19="true" style="width: 805.333px; height: 453px;" muted></iframe>
+					<!-- <div id="player"></div> -->
 				</div>
 			</div>
 		</header>
@@ -108,9 +121,9 @@
 				</div>
 			</div>
 			<div class="section-box2">
-				<video id="vid" autoplay="autoplay" loop="loop" muted="muted" cover>
+				<video id="vid" autoplay="autoplay" loop="loop" muted="muted" cover playsinline="playsinline">
 					<source src="./video/movie1-webm.webm" type="video/webm"> 
-					Your browser does not support the video tag. 
+					영상을 재생할 수 없습니다.
 				</video>
 			</div>
 			<div class="section-box3">
