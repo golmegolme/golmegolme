@@ -374,7 +374,7 @@ footer>ul>li>ul>li>a{color: red;font-size: 17px;font-weight: 600;}
     .contact-info>ul>li>ul>li{margin-bottom: 30px;}
     .contact-info>ul>li>ul>li>h4{font-size: 18px;font-weight: 700;font-family: 'Work Sans', sans-serif;}
     .contact-info>ul>li>ul>li>p{font-size: 15px;font-weight: 400;font-family: 'Work Sans', sans-serif;}
-    .contact-info>ul>li>ul>li>a{width: 50px;height: 50px;border-radius: 50px;background-color: #666;display: block;}
+    .contact-info>ul>li>ul>li>a{width: 50px;height: 50px;border-radius: 50px;background-color: #666;display: block}
     .contact-info>ul>li>ul>li>a:hover{background-color: lightcoral;transition: .5s;}
     .contact-info>ul>li>ul>li>a>img{width: 25px;height: 25px;margin: 0 auto;display: block;transform: translate(1px, 12px);}
     /* footer */
